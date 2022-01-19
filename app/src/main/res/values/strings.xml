@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">HexGame by Sglbl</string>
+    <string name="undo">Undo</string>
+    <string name="load">Load</string>
+    <string name="save">Save</string>
+    <string name="reset">Reset</string>
+    <string name="welcome_to_hexgame_for_gtu">Select difficulty from menu if user vs ai</string>
+    <string name="delete_file">Delete saved file if there is.</string>
+    <string name="test_all_methods">Test all methods</string>
+    <string name="difficulty_easy">Difficulty: Easy</string>
+    <string name="difficulty_medium">Difficulty: Medium</string>
+</resources>

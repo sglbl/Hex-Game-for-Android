@@ -1,0 +1,734 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="NestedWeights,RtlHardcoded,UselessLeaf,TooManyViews"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp">
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="@string/welcome_to_hexgame_for_gtu"/>
+
+        <Button
+            android:id="@+id/bReset"
+            android:layout_below="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/reset" />
+
+        <Button
+            android:id="@+id/bUndo"
+            android:layout_below="@+id/bReset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/undo"/>
+
+        <Button
+            android:id="@+id/bLoad"
+            android:layout_below="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text="@string/load" />
+
+        <Button
+            android:id="@+id/bSave"
+            android:layout_below="@+id/bLoad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text="@string/save" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/oldMove"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/oldMove2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.20">
+        <!-- Body intentionally empty -->
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:background="@drawable/button_border"
+            android:id="@+id/b11"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="1dp"
+            android:layout_weight = "1" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:background="@drawable/button_border"
+            android:id="@+id/b12"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="1dp"
+            android:layout_weight = "1" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:background="@drawable/button_border"
+            android:id="@+id/b13"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="1dp"
+            android:layout_weight = "1" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:background="@drawable/button_border"
+            android:id="@+id/b14"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="1dp"
+            android:layout_weight = "1" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:background="@drawable/button_border"
+            android:id="@+id/b15"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="1dp"
+            android:layout_weight = "1" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:background="@drawable/button_border"
+            android:id="@+id/b16"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="1dp"
+            android:layout_weight = "1" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:background="@drawable/button_border"
+            android:id="@+id/b17"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="1dp"
+            android:layout_weight = "1" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:background="@drawable/button_border"
+            android:id="@+id/b18"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="1dp"
+            android:layout_weight = "1" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="4.10" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.6" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:background="@drawable/button_border"
+            android:id="@+id/b21"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="1dp"
+            android:layout_weight = "1" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:background="@drawable/button_border"
+            android:id="@+id/b22"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="1dp"
+            android:layout_weight = "1" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:background="@drawable/button_border"
+            android:id="@+id/b23"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="1dp"
+            android:layout_weight = "1" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:background="@drawable/button_border"
+            android:id="@+id/b24"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="1dp"
+            android:layout_weight = "1" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:background="@drawable/button_border"
+            android:id="@+id/b25"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="1dp"
+            android:layout_weight = "1" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:background="@drawable/button_border"
+            android:id="@+id/b26"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="1dp"
+            android:layout_weight = "1" />
+
+        <androidx.appcompat.widget.AppCompatButton
+
+             android:background="@drawable/button_border"
+            android:id="@+id/b27"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="1dp"
+            android:layout_weight = "1" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:background="@drawable/button_border"
+            android:id="@+id/b28"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="1dp"
+            android:layout_weight = "1" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="3.60" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1.2" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:background="@drawable/button_border"
+            android:id="@+id/b31"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="1dp"
+            android:layout_weight = "1" />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:background="@drawable/button_border"
+            android:id="@+id/b32"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="1dp"
+            android:layout_weight = "1" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:background="@drawable/button_border"
+            android:id="@+id/b33"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="1dp"
+            android:layout_weight = "1" />
+
+        <androidx.appcompat.widget.AppCompatButton
+             android:background="@drawable/button_border"
+            android:id="@+id/b34"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="1dp"
+            android:layout_weight = "1" />
+
+        <androidx.appcompat.widget.AppCompatButton
+             android:background="@drawable/button_border"
+            android:id="@+id/b35"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="1dp"
+            android:layout_weight = "1" />
+
+        <androidx.appcompat.widget.AppCompatButton
+             android:background="@drawable/button_border"
+            android:id="@+id/b36"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="1dp"
+            android:layout_weight = "1" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:background="@drawable/button_border"
+            android:id="@+id/b37"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="1dp"
+            android:layout_weight = "1" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:background="@drawable/button_border"
+            android:id="@+id/b38"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="1dp"
+            android:layout_weight = "1" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="3.0" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1.8" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:background="@drawable/button_border"
+            android:id="@+id/b41"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="1dp"
+            android:layout_weight = "1" />
+
+        <androidx.appcompat.widget.AppCompatButton
+             android:background="@drawable/button_border"
+            android:id="@+id/b42"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="1dp"
+            android:layout_weight = "1" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:background="@drawable/button_border"
+            android:id="@+id/b43"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="1dp"
+            android:layout_weight = "1" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:background="@drawable/button_border"
+            android:id="@+id/b44"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="1dp"
+            android:layout_weight = "1" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:background="@drawable/button_border"
+            android:id="@+id/b45"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="1dp"
+            android:layout_weight = "1" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:background="@drawable/button_border"
+            android:id="@+id/b46"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="1dp"
+            android:layout_weight = "1" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:background="@drawable/button_border"
+            android:id="@+id/b47"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="1dp"
+            android:layout_weight = "1" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:background="@drawable/button_border"
+            android:id="@+id/b48"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="1dp"
+            android:layout_weight = "1" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="2.40" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="2.40" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:background="@drawable/button_border"
+            android:id="@+id/b51"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="1dp"
+            android:layout_weight = "1" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:background="@drawable/button_border"
+            android:id="@+id/b52"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="1dp"
+            android:layout_weight = "1" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:background="@drawable/button_border"
+            android:id="@+id/b53"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="1dp"
+            android:layout_weight = "1" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:background="@drawable/button_border"
+            android:id="@+id/b54"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="1dp"
+            android:layout_weight = "1" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:background="@drawable/button_border"
+            android:id="@+id/b55"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="1dp"
+            android:layout_weight = "1" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:background="@drawable/button_border"
+            android:id="@+id/b56"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="1dp"
+            android:layout_weight = "1" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:background="@drawable/button_border"
+            android:id="@+id/b57"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="1dp"
+            android:layout_weight = "1" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:background="@drawable/button_border"
+            android:id="@+id/b58"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="1dp"
+            android:layout_weight = "1" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1.80" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="3.00" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:background="@drawable/button_border"
+            android:id="@+id/b61"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="1dp"
+            android:layout_weight = "1" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:background="@drawable/button_border"
+            android:id="@+id/b62"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="1dp"
+            android:layout_weight = "1" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:background="@drawable/button_border"
+            android:id="@+id/b63"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="1dp"
+            android:layout_weight = "1" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:background="@drawable/button_border"
+            android:id="@+id/b64"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="1dp"
+            android:layout_weight = "1" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:background="@drawable/button_border"
+            android:id="@+id/b65"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="1dp"
+            android:layout_weight = "1" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:background="@drawable/button_border"
+            android:id="@+id/b66"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="1dp"
+            android:layout_weight = "1" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:background="@drawable/button_border"
+            android:id="@+id/b67"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="1dp"
+            android:layout_weight = "1" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:background="@drawable/button_border"
+            android:id="@+id/b68"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="1dp"
+            android:layout_weight = "1" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1.20" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="3.60" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:background="@drawable/button_border"
+            android:id="@+id/b71"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="1dp"
+            android:layout_weight = "1" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:background="@drawable/button_border"
+            android:id="@+id/b72"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="1dp"
+            android:layout_weight = "1"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:background="@drawable/button_border"
+            android:id="@+id/b73"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="1dp"
+            android:layout_weight = "1" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:background="@drawable/button_border"
+            android:id="@+id/b74"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="1dp"
+            android:layout_weight = "1" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:background="@drawable/button_border"
+            android:id="@+id/b75"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="1dp"
+            android:layout_weight = "1" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:background="@drawable/button_border"
+            android:id="@+id/b76"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="1dp"
+            android:layout_weight = "1" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:background="@drawable/button_border"
+            android:id="@+id/b77"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="1dp"
+            android:layout_weight = "1" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:background="@drawable/button_border"
+            android:id="@+id/b78"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="1dp"
+            android:layout_weight = "1" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.60" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="4.18" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:background="@drawable/button_border"
+            android:id="@+id/b81"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="1dp"
+            android:layout_weight = "1" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:background="@drawable/button_border"
+            android:id="@+id/b82"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="1dp"
+            android:layout_weight = "1" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:background="@drawable/button_border"
+            android:id="@+id/b83"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="1dp"
+            android:layout_weight = "1" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:background="@drawable/button_border"
+            android:id="@+id/b84"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="1dp"
+            android:layout_weight = "1" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:background="@drawable/button_border"
+            android:id="@+id/b85"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="1dp"
+            android:layout_weight = "1" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:background="@drawable/button_border"
+            android:id="@+id/b86"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="1dp"
+            android:layout_weight = "1" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:background="@drawable/button_border"
+            android:id="@+id/b87"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="1dp"
+            android:layout_weight = "1" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:background="@drawable/button_border"
+            android:id="@+id/b88"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="1dp"
+            android:layout_weight = "1" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.02" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.4">
+    <!-- Body intentionally empty -->
+    </LinearLayout>
+
+</LinearLayout>

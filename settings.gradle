@@ -1,0 +1,3 @@
+include ':driver'
+include ':app'
+rootProject.name = "HexGame by Sglbl"

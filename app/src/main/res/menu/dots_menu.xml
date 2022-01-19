@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/delete"
+    android:title="@string/delete_file"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/difficulty"
+        android:title="@string/difficulty_easy"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/difficulty2"
+        android:title="@string/difficulty_medium"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/testAll"
+        android:title="@string/test_all_methods"
+        app:showAsAction="never"/>
+
+</menu>
